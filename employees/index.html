@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Empregados</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <div class="options">
+        <h2>Options</h2>
+        <label
+          >Sort by
+          <select  id="sortBy">
+            <option value="NA">Name (Ascending)</option>
+            <option value="ND">Name (Descending)</option>
+            <option value="SA">Salary (Ascending)</option>
+            <option value="SD">Salary (Descending)</option>
+          </select>
+          <fieldset id="roles">
+            <legend>Filter by Roles</legend>
+            <label for=""></label>
+          </fieldset>
+        </label>
+      </div>
+      <div class="list">
+        <h2>Employees (<span id="count"></span>)</samp></h2>
+        <table>
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Name</th>
+              <th>Role</th>
+              <th>Salary</th>
+            </tr>
+          </thead>
+          <tbody id="tbody"></tbody>
+        </table>
+      </div>
+    </main>
+    <script src="http.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
